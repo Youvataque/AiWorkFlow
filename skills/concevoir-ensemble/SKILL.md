@@ -34,7 +34,7 @@ Pour un edit ciblé sur une fonction ou un pur changement d'UI, fais le changeme
    - Commite les tests seuls, sur une branche. Ce commit les fige.
 6. **Code.** Implémente selon son plan, au plus simple. `git diff <commit> -- tests` doit rester vide.
 7. **Contre-épreuve.** Casse chaque règle dans le code, vérifie que le bon test passe au rouge, restaure.
-8. **Relecture neuve.** Un agent neuf reçoit le plan et le diff, sans ton raisonnement. Il vérifie la conformité au plan et la simplicité.
+8. **Relecture neuve.** Lance un agent neuf avec `consigne-relecture.md`, le plan et le commit de départ, sans ton raisonnement. Traite ou remonte ce qu'il trouve.
 9. **Récap.** Pour chaque fichier, donne les fonctions et les lignes en liens `fichier:ligne`. Ajoute les écarts au plan et le résultat de la suite de tests. Rien d'autre, il fait une review rapide.
 
 ## Quand ça ne colle pas

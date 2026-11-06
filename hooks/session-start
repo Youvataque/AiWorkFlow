@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Injecte regles.md dans le contexte au démarrage de chaque session.
+
+set -euo pipefail
+
+rules="$(<"${CLAUDE_PLUGIN_ROOT}/regles.md")"
+
+rules="${rules//\\/\\\\}"
+rules="${rules//\"/\\\"}"
+rules="${rules//$'\n'/\\n}"
+rules="${rules//$'\r'/\\r}"
+rules="${rules//$'\t'/\\t}"
+
+printf '{"hookSpecificOutput":{"hookEventName":"SessionStart","additionalContext":"%s"}}\n' "$rules"

@@ -1,0 +1,13 @@
+{
+  "name": "youvataque",
+  "owner": {
+    "name": "SEGUIN Yannis"
+  },
+  "plugins": [
+    {
+      "name": "AiWorkFlow",
+      "source": "./",
+      "description": "Ma manière de développer avec Claude, conception partagée et règles permanentes"
+    }
+  ]
+}

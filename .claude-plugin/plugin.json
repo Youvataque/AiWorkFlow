@@ -1,0 +1,9 @@
+{
+  "name": "AiWorkFlow",
+  "description": "Ma manière de développer avec Claude, conception partagée et règles permanentes",
+  "version": "0.1.0",
+  "author": {
+    "name": "SEGUIN Yannis"
+  },
+  "repository": "https://github.com/Youvataque/AiWorkFlow"
+}

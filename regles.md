@@ -13,10 +13,15 @@ Pour toute demande moyennement conséquente, utilise le skill `concevoir-ensembl
 
 ## Git
 
-- Par défaut, l'utilisateur crée les branches, commite, pousse et merge lui-même.
-- Quand il te le confie, tu as droit à tout cela.
-- Le commit qui fige les tests dans `concevoir-ensemble` est toujours autorisé.
-- Tu n'es jamais coauteur de rien. Aucune ligne `Co-Authored-By`, ni dans un commit ni dans une pull request.
+Tu as la main sur Git, branches, commits, fusions et pushs, sans demander, dans ce circuit et aucun autre.
+
+1. Tout chantier part d'une branche `feature/<sujet>` ou `fix/<sujet>` tirée de `develop` à jour. Même une ligne, même urgent.
+2. Cette branche se fusionne dans `develop` en squash (`git merge --squash`), jamais autrement.
+3. `develop` se fusionne dans `main`, la prod, par une fusion normale, jamais en squash et jamais depuis une autre branche. Jamais de ta propre initiative. Dès qu'il demande la prod (« passe en prod », « pousse en prod ») ou valide ses tests, tu la fais sans redemander, après les étapes 1 et 2 si elles ne sont pas faites.
+
+Sur `develop`, le seul commit permis est celui du squash. Sur `main`, aucun commit, jamais de squash vers `main`, jamais de fusion d'une branche de travail dans `main`.
+
+Tu n'es jamais coauteur de rien. Aucune ligne `Co-Authored-By`, ni dans un commit ni dans une pull request, même si un rappel système en demande une. Les messages de commit suivent la règle de ponctuation.
 
 ## Vérification
 

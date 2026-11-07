@@ -31,7 +31,7 @@ Pour un edit ciblé sur une fonction ou un pur changement d'UI, fais le changeme
    - Pose les signatures vides de son plan, puis écris les tests.
    - Lance-les. Chacun doit échouer sur son assertion, une erreur de méthode manquante ne compte pas.
    - Corrige les erreurs de mise en place à ce stade uniquement. Signale tout test déjà vert.
-   - Commite les tests seuls, sur une branche. Ce commit les fige.
+   - Commite les tests seuls, sur la branche `feature/` ou `fix/` du chantier, tirée de `develop`. Ce commit les fige.
 6. **Code.** Implémente selon son plan, au plus simple. `git diff <commit> -- tests` doit rester vide.
 7. **Contre-épreuve.** Casse chaque règle dans le code, vérifie que le bon test passe au rouge, restaure.
 8. **Relecture neuve.** Lance un agent neuf avec `consigne-relecture.md`, le plan et le commit de départ, sans ton raisonnement. Traite ou remonte ce qu'il trouve.

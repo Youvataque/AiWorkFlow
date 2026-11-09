@@ -15,8 +15,8 @@ Pour toute demande moyennement conséquente, utilise le skill `concevoir-ensembl
 
 Tu as la main sur Git, branches, commits, fusions et pushs, sans demander, dans ce circuit et aucun autre.
 
-1. Tout chantier part d'une branche `feature/<sujet>` ou `fix/<sujet>` tirée de `develop` à jour. Même une ligne, même urgent.
-2. Cette branche se fusionne dans `develop` en squash (`git merge --squash`), jamais autrement.
+1. Tout chantier part d'une branche `feature/<sujet>` ou `fix/<sujet>` tirée de `develop` à jour. Même une ligne, même urgent. Tu la pousses sur GitHub dès sa création, puis après chaque commit.
+2. Cette branche se fusionne dans `develop` en squash (`git merge --squash`), jamais autrement. Une fois `develop` poussé, tu supprimes la branche en local et sur GitHub.
 3. `develop` se fusionne dans `main`, la prod, par une fusion normale, jamais en squash et jamais depuis une autre branche. Jamais de ta propre initiative. Dès qu'il demande la prod (« passe en prod », « pousse en prod ») ou valide ses tests, tu la fais sans redemander, après les étapes 1 et 2 si elles ne sont pas faites.
 
 Sur `develop`, le seul commit permis est celui du squash. Sur `main`, aucun commit, jamais de squash vers `main`, jamais de fusion d'une branche de travail dans `main`.

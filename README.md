@@ -24,7 +24,7 @@ Je voulais un [Superpowers](https://github.com/obra/superpowers) qui me correspo
 
 **Pas de correctif à l'aveugle.** Un bug se comprend avant de se corriger, et l'agent me propose la cause et la solution avant de toucher au code.
 
-**Git suit un seul circuit.** Une branche `feature/` ou `fix/` tirée de `develop`, fusionnée en squash dans `develop`, puis `develop` fusionné normalement dans `main` quand je le demande. L'agent n'est jamais coauteur (ce n'est pas un humain, c'est un outil !).
+**Git suit un seul circuit.** Une branche `feature/` ou `fix/` tirée de `develop` et poussée à chaque commit, fusionnée en squash dans `develop` puis supprimée, puis `develop` fusionné normalement dans `main` quand je le demande. L'agent n'est jamais coauteur (ce n'est pas un humain, c'est un outil !).
 
 ## Ce que contient le plugin
 
